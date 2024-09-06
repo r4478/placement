@@ -1,0 +1,227 @@
+<section>
+  <div class="logo">Gaurav</div>
+  <img src="https://s3.ap-south-1.amazonaws.com/hsdreams1/pins/2020/01/big/c8f2a95fab6f3510f3efa446c8f62c97.jpeg" alt="img-bg" class="bg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" /><div class="content">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <h2>Gaurav<br>Chaudhary</h2>
+    <p>Hello everyone ,i am Gaurav chaudhary from NIT Warangal </p>    <a href="#">Get Started</a>
+  </div>
+  <p class="copyrightText">©2020. Gaurav</p>
+</section>
+<div class="menuToggle" onclick="toggleMenu()"></div>
+<div class="navigation">
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Work</a></li>
+    <!-- <li><a href="#">Team</a></li> -->
+    <li><a href="#">Contact</a></li>  
+  </ul>
+  <div class="socialBar">
+    <ul>
+    <li><a href="#"><i class="fa-brands fa-facebook"></i> </a></li>
+    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+  </ul>
+    <a href="mailto:your@mail.com" class="emailBx"><i class="fa-regular fa-messages"></i></a>
+  </div>
+</div>
+<script>
+    function toggleMenu() {
+  var menuToggle = document.querySelector('.menuToggle');
+  menuToggle.classList.toggle('active');
+  var navigation = document.querySelector('.navigation');
+  navigation.classList.toggle('active');
+}
+</script>
+<style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+body {
+  background: #641b4e;
+}
+section {
+  display: flex;
+  position: relative;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding: 100px;
+}
+section .logo {
+  position: fixed;
+  top: 30px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 2em;
+  z-index: 100;
+  cursor: pointer;
+}
+section .bg {
+  position: absolute;
+  top: 0;
+  right: 60px;
+  height: 100%;
+}
+section .content {
+  position: relative;
+  max-width: 650px;
+  z-index: 1;
+}
+section .content h2 {
+  color: #fff;;
+  font-size: 3em;
+  font-weight: 700;
+  line-height: 1.1em;
+}
+@media (max-width:440px){
+  section .content h2{
+    font-size:35px;
+    font-family: 'Times New Roman', Times, serif;
+    padding:10px;
+  }
+  section .content p{
+    font-size:15px;
+    font-family: 'Times New Roman', Times, serif;
+    padding:10px;
+  }
+}
+section .content p {
+  color: #fff;
+  font-size: 1.1em;
+  margin: 20px 0 10px;
+}
+section .content a {
+  color: #fff;
+  background: #f60f20;
+  font-size: 1em;
+  margin: 20px 0;
+  font-weight: 500;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+}
+section .copyrightText {
+  position: absolute;
+  bottom: 20px;
+  color: #fff;
+  font-size: 1.1em;
+  margin: 20px 0 10px;
+}
+section .copyrightText a {
+  color: #fff;
+  text-decoration: none;
+}
+.menuToggle {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 60px;
+  height: 60px;
+  background: #f60f20;
+  cursor: pointer;
+  z-index: 1000;
+}
+.menuToggle:before {
+  content: '\f0c9';
+  font-family: FontAwesome;
+  font-size: 30px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.navigation {
+  position: fixed;
+  top: 0;
+  left: calc(100% - 60px);
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+.navigation.active {
+  left: 0;
+}
+.navigation ul {
+  position: relative;
+}
+.navigation ul li {
+  position: relative;
+  list-style: none;
+  text-align: center;
+}
+.navigation ul li a {
+  font-size: 2.5em;
+  color: #111;
+  font-weight: 300;
+  text-decoration: none;
+}
+.navigation ul li a:hover {
+  color: #f60f20;
+}
+.socialBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socialBar ul,
+.socialBar ul li {
+  position: relative;
+}
+.socialBar .emailBx {
+  position: absolute;
+  bottom: 20px;
+}
+.socialBar i {
+  color: #111;
+  font-size: 30px;
+}
+.socialBar i:hover {
+  color: #f60f20;
+} 
+@media (max-width: 767px) {
+  section {
+    padding: 100px 40px;
+  }
+  section .content h2 {
+    font-size: 2.5em;
+  }
+  .navigation {
+    left: 100%;
+  }
+  section .bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+  }
+  section .logo {
+    top: 10px;
+    font-size: 1.5em;
+  }
+  .navigation ul li a {
+    font-size: 2em;
+  }
+}
+    </style>

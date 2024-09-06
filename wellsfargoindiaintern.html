@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+        content="wrappixel, admin dashboard, html css dashboard, web dashboard, bootstrap 5 admin, bootstrap 5, css3 dashboard, bootstrap 5 dashboard, materialpro admin bootstrap 5 dashboard, frontend, responsive bootstrap 5 admin template, materialpro admin lite design, materialpro admin lite dashboard bootstrap 5 dashboard template">
+    <meta name="description"
+        content="Material Pro Lite is powerful and clean admin dashboard template, inpired from Bootstrap Framework">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Wells Fargo India</title>
+    <link rel="canonical" href="https://www.wrappixel.com/templates/materialpro-lite/" />
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,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">   <link href="chartist-init.css" rel="stylesheet">
+    <link href="chartist-plugin-tooltip.css" rel="stylesheet">
+    <link href="c3.min.css" rel="stylesheet">
+    <link href="style.min.css" rel="stylesheet">
+</head>
+<style>
+    @media(max-width:440px)
+    {
+        body{
+            overflow-x: hidden;
+        }
+    }
+</style>
+<body>
+    <div class="preloader">
+        <div class="lds-ripple">
+            <div class="lds-pos"></div>
+            <div class="lds-pos"></div>
+        </div>
+    </div>
+   
+        <style>
+          
+            .container-fluid{
+                background-image:linear-gradient(rgb(176, 218, 237),rgb(171, 203, 218));
+            }
+            h3 img{
+                height:40px;
+                width:40px;
+            }
+            
+            @media(min-width:440px){
+
+            
+            .left-sidebar{
+display:none;
+            }
+
+        </style>
+          <div class="page-wrapper">
+             <div class="page-breadcrumb">
+                <div class="row align-Homes-center">
+                    <div class="col-md-6 col-8 align-self-center">
+                        <h3 class="page-title mb-0 p-0">Wells Fargo India &nbsp;&nbsp;<img src="data:image/png;base64,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" class="profile-pic me-2">
+                            </h3>
+                        <div class="d-flex align-Homes-center">
+                            <nav aria-label="breadcrumb">
+                              
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-4 align-self-center">
+                        <div class="text-end upgrade-btn">
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+              <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="d-flex flex-wrap align-Homes-center">
+                                            <div>
+                                                <h3 class="card-title">Wells Fargo India </h3>
+                                                <h6 class="card-subtitle">WFT Intern</h6>
+                                            </div>
+                                            <div class="ms-lg-auto mx-sm-auto mx-lg-0">
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <style>
+                                      /* .card-body{
+                                       background-color:linear-gradient(rgb(13, 241, 13),rgb(0, 191, 255));
+                                      } */
+                                        p{
+                                            font-size: 20px;
+                                            font-family:'Times New Roman', Times, serif;
+                                        }
+                                    </style>
+                                    <div class="col-12 m">
+                                           <p>
+                                            Wells Fargo & Company (NYSE: WFC) is a diversified, community-based financial services company
+with $2.0 trillion in assets. Founded in 1852 and headquartered in San Francisco, Wells Fargo
+provides banking, insurance, investments, mortgage, and consumer and commercial finance
+through more than 8,500 locations, 13,000 ATMs, the internet (wellsfargo.com) and mobile banking,
+and has offices in 42 countries and territories to support customers who conduct business in the
+global economy. With approximately 273,000 team members, Wells Fargo serves one in three
+households in the United States. Wells Fargo & Company was ranked No. 25 on Fortune’s 2017
+rankings of America’s largest corporations. Wells Fargo’s vision is to satisfy our customers’
+financial needs and help them succeed financially. News, insights and perspectives from Wells
+Fargo are also available at Wells Fargo Stories
+                                           </p> <!-- <div class="chartist-tooltip"></div> -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Overall stats<hr> </h3>
+                               
+                                <style>
+                                    #bo{
+                                        display:flex;
+                                        flex-wrap: no-wrap;
+                                        flex-direction: row;
+                                        padding:5px;
+                                        align-items: center;
+                                       margin: 5px;
+                                    }
+                                    .g2{
+                                        background-color: rgb(94, 231, 151);
+                                        height: 180px;
+                                        width:180px;
+                                        padding: 35px;
+                                       margin-left: 20px;
+                                        text-align: center;
+                                    }
+                                    .g1{
+                                        background-color: rgb(231, 129, 174);
+                                        padding:35px;
+                                        height: 180px;
+                                        width:180px;
+                                        /* padding:20px; */
+                                        margin-left: 5px;
+                                        /* text-align: center; */
+                                    }
+                                    
+                                  
+                                    .n{
+                                        /* padding:60px 20px; */
+                                        box-shadow: 0 15px 15px rgb(0 0 0 / 0.2);
+                                        transition-duration: 0.9s;
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                        color:black;
+                                        font-family: 'Times New Roman', Times, serif;
+                                    }
+                                    .n:hover{
+                                        box-shadow: 0 200px 200px rgba(18, 0, 0, 0.1);
+                                    }@media (max-width:440px)
+                                    {
+                                        .n{
+                                            height: 110px;
+                                        width:150px;
+                                        
+                                            /* padding:60px 20px; */
+                                        box-shadow: 0 15px 15px rgb(0 0 0 / 0.2);
+                                        transition-duration: 0.9s;
+                                        font-size: 15px;
+                                        font-weight: 600;
+                                        color:black;
+                                        font-family: 'Times New Roman', Times, serif;
+                                   
+                                        }
+                                        .n:hover{
+                                        box-shadow: 0 200px 200px rgba(18, 0, 0, 0.1);
+                                    }
+                                    /* .g1{
+                                         height: 150px;
+                                        width:110px;
+                                        padding:20px;
+                                        
+                                    } */
+                                    }
+                                </style>
+                                <div id="bo">
+<div class="g1 n">Stipend: 120K PM</div><div class="g2 n">CTC: N/A</div>
+                                </div>
+                           
+                            <div>
+                                <hr class="mt-0 mb-0">
+                            </div>
+                            <style>
+                                .mk,.j{
+                                    color: yellow;
+                                }
+
+                            </style>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Column -->
+                    <div class="col-lg-4 col-xlg-3">
+                        <!-- Column -->
+                        <div class="card">
+                           
+                                </div>
+                            </div>
+                        </div>
+                     
+                    <div class="col-lg-8 col-xlg-9">
+                        <div class="card">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs profile-tab" role="tablist">
+                               
+
+                               
+                            <li class="nav-Home"> <a class="nav-link " data-bs-toggle="tab" href="#branch"
+                                role="tab">Eligible branches</a>
+                        </li>
+                                <li class="nav-Home"> <a class="nav-link" data-bs-toggle="tab" href="#iprocedure"
+                               
+                                    role="tab"> Internship Procedure</a> </li>
+                                   
+                                    <li class="nav-Home"> <a class="nav-link active " data-bs-toggle="tab" href="#eligi"
+                                        role="tab">Skills</a>
+                                </li>
+                               
+                            </ul>
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="eligi" role="tabpanel">
+                                    <div class="card-body">
+                                       <ul>
+                                        <li><b>Good problem solving and analytical/technical skills with the ability to design workable solutions.</b></li><br>
+                                       
+                                        <li><b>Has excellent verbal & written communication skills</b></li><br> 
+                                        <li><b>Strong attention to detail and highly self-motivated. Work closely toward deadlines.
+</b> </li><br>
+                                        
+                                        
+                                        <li><b>B. Tech - 2022 Graduate (Should have completed all subjects without any back log / arrears and must have a CGPA
+rating of >6 or 60% throughout X, +2 and Engineering)</b></li><br>
+<li><b>Must be a good team player</b></li><br>
+
+
+                                        
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="tab-pane " id="place" role="tabpanel">
+                                    <div class="card-body">
+                                            <ul>
+                                                <li><b>CTC: </b>INR 6 LPA
+                                                    </li><br>
+                                                    <hr>
+                                                    <h2>Package details</h2>
+                                                    <li></li><br>
+                                                
+                                                
+                                        
+                                    </div>
+                                </div>
+                                
+                               
+                                <div class="tab-pane" id="iprocedure" role="tabpanel">
+                                    <div class="card-body">
+                                        
+                                        <ul>
+                                                
+                                                    <h2>Stipend : </h2> Stipend Per Month - 120,000 + 10,000 (one time settlement allowance)
+<br><br><hr>
+                                                    <li><b>Bond
+: </b>False</li><br>  
+                                                    <li><b>CPI Cutoff
+: </b>0.0</li><br>  
+                                                    <li><b>Medical
+Requirments
+ : </b>NA</li><br>
+                                                    <li><b>Resume
+Shortlist : </b> True</li><br>
+                                              <li><b>Aptitude
+Test : </b>True</li><br>
+                                               <li><b>Group
+Discussion : </b>False</li><br>
+<li><b>Technical
+Test : </b>True</li><br>
+<li><b>Technical
+Test Duration : </b>60-120 Min</li><br>
+
+<li><b>Technical
+Interview : </b>True</li><br>
+<li><b>Technical
+Interview Duration: </b>45 Min</li><br>
+         
+ 
+<li><b>Number of
+Technical
+Interview
+Rounds : </b>2</li><br>
+         
+<li><b>HR Interview : </b>True</li><br>
+<li><b>HR Interview Duration: </b>30 Min</li><br>
+
+         
+<!--<li><b>Additional Information : </b>Interviews will be done over MS Teams.</li><br>
+<li><b>Other facilities offered 
+: </b>Food Subsidy ,Transport<br></li><br>
+         -->
+                                                
+                                                </ul>
+
+                                    </div>
+                                </div>
+                                
+                                <div class="tab-pane" id="pprocedure" role="tabpanel">
+                                    <div class="card-body">
+                                        
+                                       <b>N/A</b>          </div>
+                                </div> 
+                                <div class="tab-pane" id="branch" role="tabpanel">
+                                    <div class="card-body">
+                                        <div class="container-fluid">
+                                           <div class="row">
+                                                <!-- column -->
+                                                <div class="col-sm-12">
+                                                    <div class="card">
+                                                        <div class="card-body">
+                                                            <h4 class="card-title">Eligibility</h4>
+                                                            <h6 class="card-subtitle"> <code></code></h6>
+                                                            <div class="table-responsive">
+                                                                <table class="table user-table">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th class="border-top-0">#</th>
+                                                                            <th class="border-top-0">Branch</th>
+                                                                            <th class="border-top-0">Placements</th>
+
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td>1</td>
+                                                                            <td>CSE</td>
+                                                                            <td>YES</td>
+                                                                            
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>2</td>
+                                                                            <td>EEE</td>
+                                                                            <td>YES</td>
+                                                                           
+                                                                        </tr>
+                                                                       
+                                                                        <tr>
+                                                                            <td>3</td>
+                                                                            <td>ECE</td>
+                                                                            <td>YES</td>
+                                                                            
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>4</td>
+                                                                            <td>MECH.</td>
+                                                                            <td>YES</td>
+                                                                            
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>5</td>
+                                                                            <td>CHEM</td>
+                                                                            <td>YES</td>
+                                                                           
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>6</td>
+                                                                            <td>CIVIL</td>
+                                                                            <td>YES</td>
+                                                                            
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>7</td>
+                                                                            <td>MME</td>
+                                                                            
+                                                                            <td>YES</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                   
+                                                                        <tr>
+                                                                            <td>8</td>
+                                                                            <td>BIOTECH</td>
+                                                                            
+                                                                            <td>YES</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td>9</td>
+                                                                            <td>M&C</td>
+                                                                            <td>YES</td>
+                                                                           
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            </div>
+                                       
+                               
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+           <footer class="footer"> © 2022</a>
+            </footer>
+             </div>
+         </div>
+      <script src="jquery.min.js"></script>
+     <script src="bootstrap.bundle.min.js"></script>
+    <script src="app-style-switcher.js"></script>
+    <script src="waves.js"></script>
+    <script src="sidebarmenu.js"></script>
+    <script src="chartist.min.js"></script>
+    <script src="chartist-plugin-tooltip.min.js"></script>
+     <script src="d3.min.js"></script>
+    <script src="c3.min.js"></script>
+    <script src="dashboard1.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>

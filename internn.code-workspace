@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "files.associations": {
+      "new": "cpp"
+    },
+    "liveServer.settings.port": 5501,
+    "liveServer.settings.multiRootWorkspaceName": "internn"
+  }
+}
